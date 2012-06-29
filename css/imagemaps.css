@@ -1,0 +1,87 @@
+#peta {
+	position: relative;
+	margin: 20px auto;
+	border: 1px solid #ccc;
+}
+
+.penanda {
+	display: none;
+}
+
+.area {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+}
+
+.buble-up, .buble-down {
+	background: url(../img/mark.png) no-repeat 0 0;
+}
+
+.buble-down {
+	background-position: 0 -32px;
+}
+
+.buble {
+	display: none;
+	width: 200px;
+	cursor: pointer;
+	text-shadow: 0 1px 0 #fff;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	z-index: 999;
+	margin-left: -115px;
+	padding:15px;
+	color: #222;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #dce9f9;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+	background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+	-moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+	box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+	border: 1px solid #ccc;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5); 	
+}
+
+.buble::after {
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	margin-left: -10px;
+	border-bottom: 10px solid #ebf3fc;
+	border-left: 10px solid transparent;
+	border-right :10px solid transparent;
+}
+
+.buble-down .buble {
+	bottom: 12px;
+	top: auto;
+}
+
+.buble-down .buble::after {
+	bottom: -10px;
+	top: auto;
+	border-bottom: 0;
+	border-top: 10px solid #dce9f9;
+}
+
+.buble h2 {
+	font: bold 1.3em 'Trebuchet MS', Tahoma, Arial;
+	margin: 0 0 10px;
+	text-align: center;
+}
+
+.buble ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
